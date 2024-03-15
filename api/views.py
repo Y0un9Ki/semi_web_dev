@@ -27,3 +27,7 @@ def getRoutes(request):
         '/api/token/refresh/'
     ]
     return Response(routes)
+
+
+def main(request):
+    return render(request, 'main.html')
