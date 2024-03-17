@@ -4,6 +4,7 @@ import { TextField, Button } from "@mui/material";
 import { styled as muiStyled } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import { HiMiniFire } from "react-icons/hi2";
+import { AiOutlineHome } from "react-icons/ai";
 
 const SignIn = () => {
   const [inputValue, setInputValue] = useState({ userID: "", userPW: "" });
@@ -23,7 +24,11 @@ const SignIn = () => {
   return (
     <SignInPage>
       <Container>
-        <HiMiniFire size={120} style={{ margin: 30 }} />
+        <HiMiniFire
+          size={120}
+          style={{ margin: 30, cursor: "pointer" }}
+          onClick={() => navigate("/")}
+        />
         <FormField>
           <InputField>
             <TextInput
@@ -74,6 +79,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 400px;
   height: 550px;
   border: 1px solid #ddd;
