@@ -68,7 +68,7 @@ const SignIn = () => {
           <SignInButton variant="contained" size="large">
             SIGNUP
           </SignInButton>
-          <SignUpButton onClick={() => navigate("/signup")}>
+          <SignUpButton onClick={() => navigate("/signin")}>
             SIGNIN
           </SignUpButton>
         </FormField>

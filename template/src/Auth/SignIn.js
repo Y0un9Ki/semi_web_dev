@@ -4,7 +4,6 @@ import { TextField, Button } from "@mui/material";
 import { styled as muiStyled } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import { HiMiniFire } from "react-icons/hi2";
-import { AiOutlineHome } from "react-icons/ai";
 
 const SignIn = () => {
   const [inputValue, setInputValue] = useState({ userID: "", userPW: "" });
